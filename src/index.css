@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Дополнительные утилиты для line-clamp */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Блокировка скролла с сохранением его видимости */
+.stop-scrolling {
+  overflow-y: scroll !important;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+/* Стилизация скролла модального окна */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.7);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.9);
+}
+
+.modal-content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(71, 85, 105, 0.7) rgba(30, 30, 30, 0.5);
+}
