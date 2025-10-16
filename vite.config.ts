@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/kino-movies/',
+  base: '/kino-movie/',
   plugins: [tailwindcss(), react()],
 })
